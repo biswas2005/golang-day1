@@ -1,16 +1,27 @@
 package control
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func Calci() {
 	var a, b float64
 	var o string
 
-	fmt.Println("Enter a value: ")
-	fmt.Scan(&a)
-	fmt.Println("Enter an operator: ")
-	fmt.Scan(&o)
-	fmt.Println("Enter a value: ")
-	fmt.Scan(&b)
+	fmt.Print("")
+	fmt.Scan(&a, &o, &b)
+
+	if o == "+" {
+		fmt.Print(a + b)
+	} else if o == "-" {
+		fmt.Print(a - b)
+	} else if o == "*" {
+		fmt.Print(a * b)
+	} else if o == "/" {
+		fmt.Print(a / b)
+	} else if o == "%" {
+		fmt.Print(math.Mod(a, b))
+	}
 
 }

@@ -15,6 +15,7 @@ func main() {
 	// control.Evenodd()
 	// control.Evenodd()
 	// control.User()
-	control.Marks()
+	// control.Marks()
+	control.Calci()
 
 }
