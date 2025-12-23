@@ -6,22 +6,22 @@ import (
 )
 
 func Calci() {
-	var a, b float64
-	var o string
+	var value1, value2 float64
+	var operator string
 
-	fmt.Print("")
-	fmt.Scan(&a, &o, &b)
+	fmt.Println("enter value1 <operator> value2")
+	fmt.Scan(&value1, &operator, &value2)
 
-	if o == "+" {
-		fmt.Print(a + b)
-	} else if o == "-" {
-		fmt.Print(a - b)
-	} else if o == "*" {
-		fmt.Print(a * b)
-	} else if o == "/" {
-		fmt.Print(a / b)
-	} else if o == "%" {
-		fmt.Print(math.Mod(a, b))
+	if operator == "+" {
+		fmt.Print(value1 + value2)
+	} else if operator == "-" {
+		fmt.Print(value1 - value2)
+	} else if operator == "*" {
+		fmt.Print(value1 * value2)
+	} else if operator == "/" {
+		fmt.Print(value1 / value2)
+	} else if operator == "%" {
+		fmt.Print(math.Mod(value1, value2))
 	}
 
 }
