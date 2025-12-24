@@ -1,6 +1,8 @@
 package main
 
-import "golang-day1/control"
+import (
+	"golang-day1/operators"
+)
 
 func main() {
 	// day1.Consts()
@@ -16,6 +18,7 @@ func main() {
 	// control.Evenodd()
 	// control.User()
 	// control.Marks()
-	control.Calci()
+	// control.Calci()
+	operators.Assignment()
 
 }
